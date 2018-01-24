@@ -1,0 +1,4 @@
+/token.rb
+/vendor
+.bundle
+Gemfile.lock
