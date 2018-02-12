@@ -1,3 +1,7 @@
+# CVMU_Bot 
+# authored by naomi_mcrn(https://mcrn.jp/)
+# This program is provided under MIT Lisence(http://www.opensource.org/licenses/mit-license.php)
+
 require 'discordrb'
 class Debug
   class << self
