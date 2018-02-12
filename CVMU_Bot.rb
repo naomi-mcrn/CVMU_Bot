@@ -45,6 +45,16 @@ class MyBot
       end
       Debug.log(nil,msg,:bootsequence)
     end
+    Dir.glob(Pathname.new(File.expand_path(File.dirname(__FILE__))).join("events","*")).each do |evtfile|
+      msg = "loading events: #{evtfile}"
+      begin
+        load evtfile
+        msg += "success."
+      rescue
+        msg += "failed. #{e}"
+      end
+      Debug.log(nil,msg,:bootsequence)
+    end
 
     bot.run
   end
